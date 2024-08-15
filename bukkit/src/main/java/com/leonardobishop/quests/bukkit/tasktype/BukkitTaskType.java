@@ -11,7 +11,7 @@ public abstract class BukkitTaskType extends TaskType implements Listener {
 
     protected BukkitTaskTypeManager taskTypeManager;
 
-    public BukkitTaskType(final @NotNull String type, final @Nullable String author, final @Nullable String description, final @NotNull String @NotNull ... aliases) {
+    public BukkitTaskType(final @NotNull String type, final @Nullable String author, final @Nullable String description, final @NotNull String... aliases) {
         super(type, author, description, aliases);
     }
 

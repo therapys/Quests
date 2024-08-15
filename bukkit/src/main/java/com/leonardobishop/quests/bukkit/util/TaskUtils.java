@@ -550,7 +550,7 @@ public class TaskUtils {
         return false;
     }
 
-    public static boolean matchAnyString(@NotNull BukkitTaskType type, @NotNull PendingTask pendingTask, @NotNull String @Nullable [] strings, @NotNull UUID player, final @NotNull String stringKey, final @NotNull String listKey, boolean legacyColor, @NotNull String matchModeKey, boolean ignoreCase) {
+    public static boolean matchAnyString(@NotNull BukkitTaskType type, @NotNull PendingTask pendingTask, @NotNull String[] strings, @NotNull UUID player, final @NotNull String stringKey, final @NotNull String listKey, boolean legacyColor, @NotNull String matchModeKey, boolean ignoreCase) {
         Task task = pendingTask.task;
 
         List<String> checkNames = TaskUtils.getConfigStringList(task, task.getConfigValues().containsKey(stringKey) ? stringKey : listKey);
